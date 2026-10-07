@@ -1,0 +1,11 @@
+// Esquema de Prisma para PostgreSQL.
+// FASE 1: solo conexión y generador. Los modelos de la tienda se añadirán en fases posteriores.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../apps/api/src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}

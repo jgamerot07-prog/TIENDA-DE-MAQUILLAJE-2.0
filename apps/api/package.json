@@ -1,0 +1,31 @@
+{
+  "name": "@tienda/api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "API REST de la tienda (Express + TypeScript).",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --clear-screen=false src/server.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.10.0",
+    "@tienda/shared": "^0.1.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "helmet": "^8.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.20.5",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.1",
+    "tsx": "^4.23.15",
+    "vitest": "^5.0.3"
+  }
+}

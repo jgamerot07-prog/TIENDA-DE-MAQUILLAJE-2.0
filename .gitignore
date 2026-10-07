@@ -1,0 +1,36 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno (nunca subir secretos)
+.env
+.env.*
+!.env.example
+
+# Builds
+dist/
+build/
+*.tsbuildinfo
+apps/web/dist/
+
+# Prisma (cliente generado)
+apps/api/src/generated/
+prisma/*.db
+prisma/*.db-journal
+
+# Logs y temporales
+logs/
+*.log
+npm-debug.log*
+tmp/
+temp/
+.cache/
+.eslintcache
+coverage/
+*.tmp
+
+# Editor / sistema operativo
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
